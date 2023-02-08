@@ -39,7 +39,75 @@ function Card() {
         </button>
         {openModal && (
           <Modal setOpenModal={setOpenModal} openModal={openModal}>
-            <div>a</div>
+            <div className="w-96 h-full bg-[#262626] rounded-lg overflow-hidden">
+              <button
+                type="button"
+                className="w-full flex justify-center items-center border border-zinc-700/80 border-l-0 border-r-0 border-t-0 py-3 active:bg-black/20 overflow-clip"
+              >
+                <h1 className="text-red-500 font-bold text-sm">Reportar</h1>
+              </button>
+              <button
+                type="button"
+                className="w-full flex justify-center items-center border border-zinc-700/80 border-l-0 border-r-0 border-t-0 py-3 active:bg-black/20 overflow-clip"
+              >
+                <h1 className="text-red-500 font-bold text-sm">
+                  Dejar de Seguir
+                </h1>
+              </button>
+              <button
+                type="button"
+                className="w-full flex justify-center items-center border border-zinc-700/80 border-l-0 border-r-0 border-t-0 py-3 active:bg-black/20 overflow-clip"
+              >
+                <h1 className="text-white font-normal text-sm">
+                  Agrergar a Favoritos
+                </h1>
+              </button>
+              <button
+                type="button"
+                className="w-full flex justify-center items-center border border-zinc-700/80 border-l-0 border-r-0 border-t-0 py-3 active:bg-black/20 overflow-clip"
+              >
+                <h1 className="text-white font-normal text-sm">
+                  Ir a la publicación
+                </h1>
+              </button>
+              <button
+                type="button"
+                className="w-full flex justify-center items-center border border-zinc-700/80 border-l-0 border-r-0 border-t-0 py-3 active:bg-black/20 overflow-clip"
+              >
+                <h1 className="text-white font-normal text-sm">
+                  Compartir en...
+                </h1>
+              </button>
+              <button
+                type="button"
+                className="w-full flex justify-center items-center border border-zinc-700/80 border-l-0 border-r-0 border-t-0 py-3 active:bg-black/20 overflow-clip"
+              >
+                <h1 className="text-white font-normal text-sm">
+                  Copiar enlace
+                </h1>
+              </button>
+              <button
+                type="button"
+                className="w-full flex justify-center items-center border border-zinc-700/80 border-l-0 border-r-0 border-t-0 py-3 active:bg-black/20 overflow-clip"
+              >
+                <h1 className="text-white font-normal text-sm">Insertar</h1>
+              </button>
+              <button
+                type="button"
+                className="w-full flex justify-center items-center border border-zinc-700/80 border-l-0 border-r-0 border-t-0 py-3 active:bg-black/20 overflow-clip"
+              >
+                <h1 className="text-white font-normal text-sm">
+                  Información sobre esta cuenta
+                </h1>
+              </button>
+              <button
+                type="button"
+                onClick={() => setOpenModal(!openModal)}
+                className="w-full flex justify-center items-center border border-zinc-700/80 border-l-0 border-r-0 border-t-0 border-b-0 py-3 active:bg-black/20 overflow-clip"
+              >
+                <h1 className="text-white font-normal text-sm">Cancelar</h1>
+              </button>
+            </div>
           </Modal>
         )}
       </div>

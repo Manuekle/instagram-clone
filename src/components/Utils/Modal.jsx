@@ -12,7 +12,7 @@ function Modal({ setOpenModal, openModal, children }) {
 
   return (
     <section
-      className="flex fixed z-50 top-0 left-0 w-screen h-screen bg-black/60 justify-center items-center"
+      className="flex fixed z-50 top-0 left-0 w-screen h-screen bg-black/60 justify-center items-center overflow-hidden"
       onClick={() => setOpenModal(!openModal)}
     >
       <motion.div
@@ -20,12 +20,7 @@ function Modal({ setOpenModal, openModal, children }) {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.2 }}
       >
-        <div
-          className="w-full h-full bg-[#262626] rounded-lg"
-          onClick={handleClick}
-        >
-          {children}
-        </div>
+        <div onClick={handleClick}>{children}</div>
       </motion.div>
     </section>
   );

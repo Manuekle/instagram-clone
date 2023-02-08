@@ -234,7 +234,7 @@ function ProfilePage() {
           </Link>
         </div>
         {reload ? (
-          <div className="flex justify-center mt-6">
+          <div className="flex justify-center h-96 items-center">
             <h1 className="text-white text-[13px] font-black">Cargando...</h1>
           </div>
         ) : (
