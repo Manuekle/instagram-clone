@@ -16,7 +16,7 @@ function Header() {
   const [active, setActive] = useState(1);
   const [scale, setScale] = useState(false);
   return (
-    <div className="text-white fixed border border-zinc-700 border-t-0 border-l-0 border-b-0 h-screen w-[22em] bg-black px-4 py-9 flex flex-col justify-between">
+    <div className="text-white fixed border border-zinc-700 border-t-0 border-l-0 border-b-0 h-screen xl:w-[18em] 2xl:w-[22em] bg-black px-4 py-9 flex flex-col justify-between">
       <div className="flex flex-col justify-between">
         <Link to="/">
           <InstaLogo className="ml-2" />
@@ -29,13 +29,13 @@ function Header() {
           >
             <Home
               active={active}
-              className="w-6 h-6 fill-white transform transition duration-150 hover:scale-[1.05]"
+              className="xl:h-5 xl:5-w 2xl:w-6 2xl:h-6 fill-white transform transition duration-150 hover:scale-[1.05]"
             />
             <h1
               className={
                 active === 1
-                  ? 'text-white font-bold text-[16px] tracking-normal'
-                  : 'text-white font-light text-[16px] tracking-normal'
+                  ? 'text-white font-bold text-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
+                  : 'text-white font-light text-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
               }
             >
               Inicio
@@ -48,13 +48,13 @@ function Header() {
           >
             <Search
               active={active}
-              className="w-6 h-6 fill-white transform transition duration-150 hover:scale-[1.05]"
+              className="xl:h-5 xl:5-w 2xl:w-6 2xl:h-6 fill-white transform transition duration-150 hover:scale-[1.05]"
             />
             <h1
               className={
                 active === 2
-                  ? 'text-white font-bold text-[16px] tracking-normal'
-                  : 'text-white font-light text-[16px] tracking-normal'
+                  ? 'text-white font-boldtext-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
+                  : 'text-white font-lighttext-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
               }
             >
               Buscar
@@ -67,13 +67,13 @@ function Header() {
           >
             <Explore
               active={active}
-              className="w-6 h-6 fill-white transform transition duration-150 hover:scale-[1.05]"
+              className="xl:h-5 xl:5-w 2xl:w-6 2xl:h-6 fill-white transform transition duration-150 hover:scale-[1.05]"
             />
             <h1
               className={
                 active === 3
-                  ? 'text-white font-bold text-[16px] tracking-normal'
-                  : 'text-white font-light text-[16px] tracking-normal'
+                  ? 'text-white font-boldtext-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
+                  : 'text-white font-lighttext-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
               }
             >
               Explorar
@@ -87,13 +87,13 @@ function Header() {
           >
             <Reel
               active={active}
-              className="w-6 h-6 fill-white transform transition duration-150 hover:scale-[1.05]"
+              className="xl:h-5 xl:5-w 2xl:w-6 2xl:h-6 fill-white transform transition duration-150 hover:scale-[1.05]"
             />
             <h1
               className={
                 active === 4
-                  ? 'text-white font-bold text-[16px] tracking-normal'
-                  : 'text-white font-light text-[16px] tracking-normal'
+                  ? 'text-white font-boldtext-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
+                  : 'text-white font-lighttext-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
               }
             >
               Reels
@@ -106,13 +106,13 @@ function Header() {
           >
             <Messenger
               active={active}
-              className="w-6 h-6 fill-white transform transition duration-150 hover:scale-[1.05]"
+              className="xl:h-5 xl:5-w 2xl:w-6 2xl:h-6 fill-white transform transition duration-150 hover:scale-[1.05]"
             />
             <h1
               className={
                 active === 5
-                  ? 'text-white font-bold text-[16px] tracking-normal'
-                  : 'text-white font-light text-[16px] tracking-normal'
+                  ? 'text-white font-boldtext-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
+                  : 'text-white font-lighttext-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
               }
             >
               Mensajes
@@ -125,13 +125,13 @@ function Header() {
           >
             <Notify
               active={active}
-              className="w-6 h-6 fill-white transform transition duration-150 hover:scale-[1.05]"
+              className="xl:h-5 xl:5-w 2xl:w-6 2xl:h-6 fill-white transform transition duration-150 hover:scale-[1.05]"
             />
             <h1
               className={
                 active === 6
-                  ? 'text-white font-bold text-[16px] tracking-normal'
-                  : 'text-white font-light text-[16px] tracking-normal'
+                  ? 'text-white font-boldtext-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
+                  : 'text-white font-lighttext-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
               }
             >
               Notificaciones
@@ -144,13 +144,13 @@ function Header() {
           >
             <More
               active={active}
-              className="w-6 h-6 fill-white transform transition duration-150 hover:scale-[1.05]"
+              className="xl:h-5 xl:5-w 2xl:w-6 2xl:h-6 fill-white transform transition duration-150 hover:scale-[1.05]"
             />
             <h1
               className={
                 active === 7
-                  ? 'text-white font-bold text-[16px] tracking-normal'
-                  : 'text-white font-light text-[16px] tracking-normal'
+                  ? 'text-white font-boldtext-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
+                  : 'text-white font-lighttext-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
               }
             >
               Crear
@@ -167,8 +167,8 @@ function Header() {
             <h1
               className={
                 active === 8
-                  ? 'text-white font-bold text-[16px] tracking-normal'
-                  : 'text-white font-light text-[16px] tracking-normal'
+                  ? 'text-white font-boldtext-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
+                  : 'text-white font-lighttext-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
               }
             >
               Perfil
@@ -181,12 +181,12 @@ function Header() {
         onClick={() => setActive(9)}
         className="flex flex-row items-center gap-4 hover:bg-zinc-900/80 rounded-full px-3 py-3 transform transition duration-150"
       >
-        <Plus className="w-6 h-6 fill-white transform transition duration-150 hover:scale-[1.05]" />
+        <Plus className="xl:h-5 xl:5-w 2xl:w-6 2xl:h-6 fill-white transform transition duration-150 hover:scale-[1.05]" />
         <h1
           className={
             active === 9
-              ? 'text-white font-bold text-[16px] tracking-normal'
-              : 'text-white font-light text-[16px] tracking-normal'
+              ? 'text-white font-boldtext-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
+              : 'text-white font-lighttext-sm xl:text-[14px] 2xl:text-[16px] tracking-normal'
           }
         >
           Más

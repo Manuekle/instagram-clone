@@ -10,11 +10,13 @@ import Slider from '../components/Utils/Slider';
 function HomePage() {
   return (
     <section className="grid grid-cols-2 gap-32">
-      <div className="xl:col-span-1 col-span-2 w-[28em] h-full flex flex-col justify-center items-center gap-12">
-        <Slider />
+      <div className="xl:col-span-1 col-span-2 w-full h-full flex flex-col justify-center items-center gap-12">
+        <span className="w-[28em]">
+          <Slider />
+        </span>
         <Card />
       </div>
-      <div className="xl:col-span-1 col-span-2 w-[22em] flex flex-col gap-4">
+      {/* <div className="xl:col-span-1 col-span-2 w-[22em] flex flex-col gap-4">
         <Info />
         <span className="flex justify-between items-center">
           <h1 className="text-white/60 text-xs">Sugerencias para ti</h1>
@@ -24,7 +26,7 @@ function HomePage() {
         </span>
         <Suggestions />
         <MoreInfo />
-      </div>
+      </div> */}
     </section>
   );
 }
